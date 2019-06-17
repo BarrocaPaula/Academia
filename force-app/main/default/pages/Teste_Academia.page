@@ -1,0 +1,14 @@
+<apex:page controller="testController">
+<h1>Congratulations </h1>
+This is my new Page
+<br/><br/><br/>
+<apex:outputpanel id="display">
+    <apex:outputtext value="My Var is {!myVar}"/>
+<br/>
+    <apex:outputtext value="My Var2 is {!myVar2}"/>
+</apex:outputpanel>
+<br/><br/>
+<apex:form >
+<apex:commandButton value="Update My Var" action="{!save}" id="theButton"/>
+</apex:form>
+</apex:page>

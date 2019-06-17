@@ -1,0 +1,27 @@
+<apex:page Controller="NovoContacto" lightningStylesheets="True">
+<apex:form >
+    <apex:pageBlock >
+    
+    <apex:pageBlockSection >
+
+     First Name <apex:inputtext value="{!inputFirstName}"/>
+
+     Last Name <apex:inputtext value="{!inputLastName}"/>
+
+     Phone <apex:inputtext value="{!inputPhone}"/>
+     
+     Email <apex:inputtext value="{!inputEmail}"/>
+     
+     </apex:pageBlockSection>
+
+<apex:pageBlockButtons location="bottom">
+
+     <apex:commandButton action="{!save}" value="Save"/>
+
+     </apex:pageBlockButtons>
+
+    </apex:pageBlock>
+
+   </apex:form>
+
+</apex:page>
